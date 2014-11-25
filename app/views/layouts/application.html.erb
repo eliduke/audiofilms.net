@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Audiofilms</title>
+	<link href="http://bootswatch.com/darkly/bootstrap.min.css" rel="stylesheet">
+	<link href="/application.css" rel="stylesheet">
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="../" class="navbar-brand">AudioFilms</a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="navbar-main">
+        <ul class="nav navbar-nav">
+          <li><%= link_to "Recent", "#" %></li>
+          <li><%= link_to "Full List", all_path %></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to "Request", "#" %></li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+
+	<div class="container">
+		<%= yield %>
+	</div>
+
+  <div id="footer">
+    <div class="container">
+
+    </div><!-- container -->
+  </div><!-- footer -->
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<%= form_for(@audiofilm) do |f| %>
+  <% if @audiofilm.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@audiofilm.errors.count, "error") %> prohibited this audiofilm from being saved:</h2>
+
+      <ul>
+      <% @audiofilm.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :release %><br>
+    <%= f.date_select :release, start_year: 1950 %>
+  </div>
+  <div class="field">
+    <%= f.label :slug %><br>
+    <%= f.text_field :slug %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

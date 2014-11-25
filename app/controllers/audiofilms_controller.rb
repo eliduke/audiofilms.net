@@ -1,0 +1,64 @@
+class AudiofilmsController < ApplicationController
+  before_action :set_audiofilm, only: [:show, :edit, :update, :destroy]
+
+  def index
+    @audiofilms = Audiofilm.all
+  end
+
+  def all
+    @audiofilms = Audiofilm.all.order(:title)
+  end
+
+  def show
+  end
+
+  def new
+    @audiofilm = Audiofilm.new
+  end
+
+  def edit
+  end
+
+  def create
+    @audiofilm = Audiofilm.new(audiofilm_params)
+
+    respond_to do |format|
+      if @audiofilm.save
+        format.html { redirect_to root_path, notice: 'Audiofilm was successfully created.' }
+        format.json { render :show, status: :created, location: @audiofilm }
+      else
+        format.html { render :new }
+        format.json { render json: @audiofilm.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  def update
+    respond_to do |format|
+      if @audiofilm.update(audiofilm_params)
+        format.html { redirect_to root_path, notice: 'Audiofilm was successfully updated.' }
+        format.json { render :show, status: :ok, location: @audiofilm }
+      else
+        format.html { render :edit }
+        format.json { render json: @audiofilm.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  def destroy
+    @audiofilm.destroy
+    respond_to do |format|
+      format.html { redirect_to root_path, notice: 'Audiofilm was successfully destroyed.' }
+      format.json { head :no_content }
+    end
+  end
+
+  private
+    def set_audiofilm
+      @audiofilm = Audiofilm.find_by_slug(params[:slug])
+    end
+
+    def audiofilm_params
+      params.require(:audiofilm).permit(:title, :description, :release, :slug)
+    end
+end
