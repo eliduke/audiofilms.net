@@ -1,13 +1,15 @@
 Rails.application.routes.draw do
 
-  root 'audiofilms#index'
-
-  get '/' => 'audiofilms#index'
-  get '/new' => 'audiofilms#new'
-  get '/all' => 'audiofilms#all', as: :all
-  get '/audiofilms/:slug' => 'audiofilms#show', as: :slug
+  root 'audiofilms#home'
 
   resources :audiofilms
+
+  get '/recent' => 'audiofilms#recent', as: :recent
+  get '/all' => 'audiofilms#index', as: :all
+  get '/audiofilms/:id' => 'audiofilms#show', as: :slug
+
+  get '/new' => 'audiofilms#new'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

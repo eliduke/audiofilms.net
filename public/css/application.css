@@ -2,12 +2,10 @@ body {
 	margin-top: 80px;
 }
 
-h1 {
-	margin: 0;
-}
+h1 { margin: 0 0 40px 0 }
 
 h2 {
-	margin: 0;
+	margin: 0 0  0;
 }
 
 img {
@@ -18,28 +16,57 @@ audio {
 	width: 100%;
 }
 
+.well {
+	/*background: #CD8C95;*/
+	background: #666;
+}
+
 #banner {
 	margin: 20px 0;
+}
+
+#banner h1 {
+	margin: 0;
+	font-size: 400%;
 	text-align: center;
 }
 
-#banner h1 { font-size: 400% }
+#banner p.lead {
+	font-size: 100%;
+	text-align: center;
+	margin-bottom: 60px;
+}
 
-#banner p.lead { font-size: 100% }
+#banner h2 {
+	font-size: 200%;
+	text-align: center;
+}
+
+#banner h4 {
+	font-size: 160%;
+	text-align: center;
+	margin: 0 0 10px 0;
+	background: #375A7F;
+}
+
+#banner p {
+}
 
 /* MEDIA */
 
 @media (min-width: 768px) and (max-width: 991px) {
 	#banner h1 { font-size: 800% }
-	#banner p.lead { font-size: 140% }
+	#banner p.lead { font-size: 200% }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
 	#banner h1 { font-size: 1000% }
-	#banner p.lead { font-size: 180% }
+	#banner p.lead { font-size: 250% }
+	#banner h2 { font-size: 250% }
 }
 
 @media (min-width: 1200px) {
 	#banner h1 { font-size: 1200% }
-	#banner p.lead { font-size: 200% }
+	#banner p.lead { font-size: 300% }
+	#banner h2 { font-size: 300% }
 }

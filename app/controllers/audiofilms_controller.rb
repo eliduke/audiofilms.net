@@ -1,12 +1,17 @@
 class AudiofilmsController < ApplicationController
-  before_action :set_audiofilm, only: [:show, :edit, :update, :destroy]
+  before_action :set_audiofilm, only: [:edit, :update, :destroy]
+  before_action :findbyslug, only: [:show]
 
-  def index
-    @audiofilms = Audiofilm.all
+  def home
+    @audiofilms = Audiofilm.all.order("created_at DESC").limit(5)
   end
 
-  def all
+  def index
     @audiofilms = Audiofilm.all.order(:title)
+  end
+
+  def recent
+    @audiofilms = Audiofilm.all.order("created_at DESC").limit(15)
   end
 
   def show
@@ -55,7 +60,11 @@ class AudiofilmsController < ApplicationController
 
   private
     def set_audiofilm
-      @audiofilm = Audiofilm.find_by_slug(params[:slug])
+      @audiofilm = Audiofilm.find(params[:id])
+    end
+
+    def findbyslug
+      @audiofilm = Audiofilm.find_by_slug(params[:id])
     end
 
     def audiofilm_params

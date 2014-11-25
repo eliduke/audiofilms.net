@@ -1,0 +1,52 @@
+<div id="banner">
+	<div class="row">
+		<h1>AudioFilms</h1>
+		<p class="lead">Where we're going, we don't need eyes to see.</p>
+	</div>
+
+	<div class="row">
+
+		<div class="col-sm-4">
+			<h4 class="well well-sm">Listen</h4>
+			<p class="well well-sm">What's that one movie you've seen dozens of times? You quote lines in your head without even thinking about it. Maybe you've got a couple movies like that, I know I sure do. One time my brother and I watched Billy Madison three times in a row. I did the same thing with <em>The Rock</em> a couple years later.</p>
+		</div>
+
+		<div class="col-sm-4">
+			<h4 class="well well-sm">Remember</h4>
+			<p class="well well-sm">It's just like those first couple steps down into your cousins' basement: the sturdy stairs, carpeted beneath your feet, and that thin metal railing in your hand. Smells like your home away from home, and you would know that even if you were blind-folded (someone should turn <u>that</u> into a <a href="http://www.yankeecandle.com/product/cousinsbasement?referer=<%= root_url %>" target="_blank" title="Yankee Candle">Yankee Candle</a>).</p>
+		</div>
+
+		<div class="col-sm-4">
+			<h4 class="well well-sm">See</h4>
+			<p class="well well-sm">You've already done the hard work: you watched the same movie over &amp; over &amp; over again, like a crazy person. Now just sit back, relax, and let your brain show you what you've already seen 100 times. You're like Daredevil, but instead of fighting crime you're listening to an AudioFilm. Pretty cool, huh?</p>
+		</div>
+	</div>
+
+	<div class="row"><hr /></div>
+
+	<h2><em>Listen</em> to your favorite movies anytime, anywhere.</h2>
+
+	<div class="row"><hr /></div>
+
+</div>
+
+<% @audiofilms.each do |audiofilm| %>
+
+	<div class="audiofilm">
+
+		<div class="row">
+			<div class="col-sm-8 col-md-8 col-lg-10">
+				<h2><%= link_to audiofilm.title, slug_path(audiofilm.slug) %></h2>
+				<p><%= audiofilm.release.strftime("%B #{audiofilm.release.day.ordinalize}, %Y") %></p>
+				<p><%= audiofilm.description %></p>
+				<h4><a href="http://audiofilms.s3.amazonaws.com/audio/<%= audiofilm.slug %>.mp3">Click here for the <%= audiofilm.title %> MP3</a></h4>
+			</div>
+
+			<div class="col-sm-4 col-md-4 col-lg-2">
+				<img class="img-responsive" src="http://audiofilms.s3.amazonaws.com/images/<%= audiofilm.slug %>.jpg">
+			</div>
+		</div>
+
+	</div>
+
+<% end %>
