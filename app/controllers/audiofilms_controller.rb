@@ -34,7 +34,7 @@ class AudiofilmsController < ApplicationController
 
     respond_to do |format|
       if @audiofilm.save
-        format.html { redirect_to root_path, notice: 'Audiofilm was successfully created.' }
+        format.html { redirect_to admin_path, notice: 'Audiofilm was successfully created.' }
         format.json { render :show, status: :created, location: @audiofilm }
       else
         format.html { render :new }
@@ -46,7 +46,7 @@ class AudiofilmsController < ApplicationController
   def update
     respond_to do |format|
       if @audiofilm.update(audiofilm_params)
-        format.html { redirect_to root_path, notice: 'Audiofilm was successfully updated.' }
+        format.html { redirect_to admin_path, notice: 'Audiofilm was successfully updated.' }
         format.json { render :show, status: :ok, location: @audiofilm }
       else
         format.html { render :edit }
@@ -58,7 +58,7 @@ class AudiofilmsController < ApplicationController
   def destroy
     @audiofilm.destroy
     respond_to do |format|
-      format.html { redirect_to root_path, notice: 'Audiofilm was successfully destroyed.' }
+      format.html { redirect_to admin_path, notice: 'Audiofilm was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

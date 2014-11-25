@@ -10,7 +10,8 @@ Rails.application.routes.draw do
 
   get '/admin' => 'audiofilms#admin', as: :admin
   get '/admin/new' => 'audiofilms#new', as: :new
-  get '/admin/edit/:id' => 'audiofilms#edit', as: :edit
+  get '/admin/:id/edit' => 'audiofilms#edit', as: :edit
+  get '/admin/:id/destroy' => 'audiofilms#destroy', as: :destroy
 
 
   # Example of regular route:

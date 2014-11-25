@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="col-sm-8">
-		<h2><%= @audiofilm.title %></h2>
+		<h2 class="well well-sm"><%= @audiofilm.title %></h2>
 		<p><%= @audiofilm.release.strftime("%B #{@audiofilm.release.day.ordinalize}, %Y") %></p>
 		<p><%= @audiofilm.description %></p>
 		<audio src="http://audiofilms.s3.amazonaws.com/audio/<%= @audiofilm.slug %>.mp3" controls preload></audio>

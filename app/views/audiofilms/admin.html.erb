@@ -4,7 +4,7 @@
     <tr>
       <th>Title</th>
       <th>Released</th>
-			<th>Edit</th>
+			<th class="text-center">Edit</th>
     </tr>
   </thead>
   <tbody>
@@ -12,7 +12,12 @@
     <tr>
       <td><%= link_to audiofilm.title, slug_path(audiofilm.slug) %></td>
       <td><%= audiofilm.release.strftime("%B #{audiofilm.release.day.ordinalize}, %Y") %></td>
-			<td><%= link_to "edit", edit_audiofilm_path(audiofilm) %></td>
+			<td class="text-center"><%= link_to edit_path(audiofilm) do %><span class="glyphicon glyphicon-pencil"></span><% end %></td>
+
+			<%#= link_to audiofilm, method: :destroy, confirm: "Are you sure you want to delete this AudioFilm?" do %>
+				<!-- <span class="glyphicon glyphicon-remove"></span> -->
+			<%# end %>
+
     </tr>
 		<% end %>
 	</tbody>
