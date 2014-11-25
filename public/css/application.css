@@ -23,6 +23,23 @@ audio {
 	text-align: center;
 }
 
-#banner h1 {
-	font-size: 800%;
+#banner h1 { font-size: 400% }
+
+#banner p.lead { font-size: 100% }
+
+/* MEDIA */
+
+@media (min-width: 768px) and (max-width: 991px) {
+	#banner h1 { font-size: 800% }
+	#banner p.lead { font-size: 140% }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	#banner h1 { font-size: 1000% }
+	#banner p.lead { font-size: 180% }
+}
+
+@media (min-width: 1200px) {
+	#banner h1 { font-size: 1200% }
+	#banner p.lead { font-size: 200% }
 }
