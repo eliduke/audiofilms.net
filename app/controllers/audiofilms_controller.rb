@@ -8,14 +8,17 @@ class AudiofilmsController < ApplicationController
   end
 
   def index
+    @title = "Master List"
     @audiofilms = Audiofilm.all.order(:title)
   end
 
   def recent
+    @title = "Recent Additions"
     @audiofilms = Audiofilm.all.order("created_at DESC").limit(15)
   end
 
   def show
+    @title = @audiofilm.title
   end
 
   def admin
