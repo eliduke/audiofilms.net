@@ -5,10 +5,12 @@ Rails.application.routes.draw do
   resources :audiofilms
 
   get '/recent' => 'audiofilms#recent', as: :recent
-  get '/all' => 'audiofilms#index', as: :all
+  get '/master-list' => 'audiofilms#index', as: :master_list
   get '/audiofilms/:id' => 'audiofilms#show', as: :slug
 
-  get '/new' => 'audiofilms#new'
+  get '/admin' => 'audiofilms#admin', as: :admin
+  get '/admin/new' => 'audiofilms#new', as: :new
+  get '/admin/edit/:id' => 'audiofilms#edit', as: :edit
 
 
   # Example of regular route:

@@ -1,6 +1,7 @@
 class AudiofilmsController < ApplicationController
   before_action :set_audiofilm, only: [:edit, :update, :destroy]
   before_action :findbyslug, only: [:show]
+  http_basic_authenticate_with name: "#{ENV['USERNAME']}", password: "#{ENV['PASSWORD']}", except: [:home, :index, :recent, :show]
 
   def home
     @audiofilms = Audiofilm.all.order("created_at DESC").limit(5)
@@ -15,6 +16,10 @@ class AudiofilmsController < ApplicationController
   end
 
   def show
+  end
+
+  def admin
+    @audiofilms = Audiofilm.all.order(:title)
   end
 
   def new

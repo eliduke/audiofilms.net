@@ -16,9 +16,30 @@ audio {
 	width: 100%;
 }
 
+label {
+	font-size: 160%;
+	font-weight: normal;
+}
+
+input, textarea, select {
+	margin-bottom: 20px;
+}
+
+textarea.form-control {
+	height: 120px;
+}
+
+input.input-lg {
+	font-size: 200%;
+}
+
 .well {
 	/*background: #CD8C95;*/
 	background: #666;
+}
+
+footer {
+	margin-bottom: 20px;
 }
 
 #banner {
