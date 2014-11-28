@@ -29,24 +29,14 @@
 	<div class="row"><hr /></div>
 
 </div>
+<div class="row">
 
-<% @audiofilms.each do |audiofilm| %>
+  <% @audiofilms.each do |audiofilm| %>
+  	<div class="col-xs-6 col-sm-3 col-md-2 col-lg-2">
+      <%= link_to slug_path(audiofilm.slug) do %>
+  		  <img class="img-responsive" src="http://audiofilms.s3.amazonaws.com/images/<%= audiofilm.slug %>.jpg">
+      <% end %>
+  	</div>
+  <% end %>
 
-	<div class="audiofilm">
-
-		<div class="row">
-			<div class="col-sm-8 col-md-8 col-lg-10">
-				<h2><%= link_to audiofilm.title, slug_path(audiofilm.slug) %></h2>
-				<p><%= audiofilm.release.strftime("%B #{audiofilm.release.day.ordinalize}, %Y") %></p>
-				<p><%= audiofilm.description %></p>
-				<h4><a href="http://audiofilms.s3.amazonaws.com/audio/<%= audiofilm.slug %>.mp3">Click here for the <%= audiofilm.title %> MP3</a></h4>
-			</div>
-
-			<div class="col-sm-4 col-md-4 col-lg-2">
-				<img class="img-responsive" src="http://audiofilms.s3.amazonaws.com/images/<%= audiofilm.slug %>.jpg">
-			</div>
-		</div>
-
-	</div>
-
-<% end %>
+</div>

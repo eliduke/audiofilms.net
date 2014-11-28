@@ -4,7 +4,7 @@ class AudiofilmsController < ApplicationController
   http_basic_authenticate_with name: "#{ENV['USERNAME']}", password: "#{ENV['PASSWORD']}", except: [:home, :index, :recent, :show]
 
   def home
-    @audiofilms = Audiofilm.all.order("created_at DESC").limit(5)
+    @audiofilms = Audiofilm.all.order("created_at DESC").limit(12)
   end
 
   def index

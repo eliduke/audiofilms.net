@@ -6,13 +6,13 @@ Rails.application.routes.draw do
 
   get '/recent' => 'audiofilms#recent', as: :recent
   get '/master-list' => 'audiofilms#index', as: :master_list
-  get '/audiofilms/:id' => 'audiofilms#show', as: :slug
 
   get '/admin' => 'audiofilms#admin', as: :admin
   get '/admin/new' => 'audiofilms#new', as: :new
   get '/admin/:id/edit' => 'audiofilms#edit', as: :edit
   get '/admin/:id/destroy' => 'audiofilms#destroy', as: :destroy
 
+  get '/:id' => 'audiofilms#show', as: :slug
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
