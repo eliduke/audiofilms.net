@@ -75,6 +75,16 @@ footer {
 
 /* MEDIA */
 
+@media (max-width: 767px) {
+  #show img.mobile { display: all }
+  #show img.desktop { display: none }
+}
+
+@media (min-width: 768px) {
+  #show img.mobile { display: none }
+  #show img.desktop { display: all }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
 	#banner h1 { font-size: 800% }
 	#banner p.lead { font-size: 200% }
