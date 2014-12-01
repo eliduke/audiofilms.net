@@ -9,7 +9,7 @@ class AudiofilmsController < ApplicationController
 
   def index
     @title = "Master List"
-    @audiofilms = Audiofilm.all.order(:title)
+    @audiofilms = Audiofilm.all.order(:slug)
   end
 
   def recent
@@ -22,7 +22,7 @@ class AudiofilmsController < ApplicationController
   end
 
   def admin
-    @audiofilms = Audiofilm.all.order(:title)
+    @audiofilms = Audiofilm.all.order(:slug)
   end
 
   def new
