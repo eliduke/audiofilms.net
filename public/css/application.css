@@ -78,6 +78,8 @@ footer {
 @media (max-width: 767px) {
   #show img.mobile { display: all }
   #show img.desktop { display: none }
+  #home h3 { font-size: 100% }
+  #home img.hide-on-mobile { display: none }
 }
 
 @media (min-width: 768px) {
@@ -88,16 +90,17 @@ footer {
 @media (min-width: 768px) and (max-width: 991px) {
 	#banner h1 { font-size: 800% }
 	#banner p.lead { font-size: 200% }
+  #home img.hide-on-small { display: none }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
 	#banner h1 { font-size: 1000% }
 	#banner p.lead { font-size: 250% }
-	#banner h2 { font-size: 250% }
+	#home h2 { font-size: 250% }
 }
 
 @media (min-width: 1200px) {
 	#banner h1 { font-size: 1200% }
 	#banner p.lead { font-size: 300% }
-	#banner h2 { font-size: 300% }
+	#home h2 { font-size: 300% }
 }
