@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
-ruby "2.1.3"
+ruby "2.4.2"
 
-gem 'rails', '4.1.8'
+gem 'rails', '5.1.4'
 gem 'pg'
 gem 'puma'
 gem 'rails_12factor'

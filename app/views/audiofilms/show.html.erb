@@ -1,16 +1,16 @@
 <div id="show">
   <div class="row">
-  	<div class="col-sm-8">
-  		<h2 class="well well-sm"><%= @audiofilm.title %></h2>
+    <div class="col-sm-8">
+      <h2><%= @audiofilm.title %></h2>
       <img class="img-responsive mobile" src="http://audiofilms.s3.amazonaws.com/images/<%= @audiofilm.slug %>-mobile.jpg">
-  		<h4><%= @audiofilm.release.strftime("%B #{@audiofilm.release.day.ordinalize}, %Y") %></h4>
-  		<p><%= simple_format(@audiofilm.description) %></p>
-  		<audio src="http://audiofilms.s3.amazonaws.com/audio/<%= @audiofilm.slug %>.mp3" controls preload></audio>
-  		<p class="text-center">Problems? <a href="http://audiofilms.s3.amazonaws.com/audio/<%= @audiofilm.slug %>.mp3">Click here for the <%= @audiofilm.title %> MP3</a></p>
-  	</div>
+      <h4><%= @audiofilm.release.strftime("%B #{@audiofilm.release.day.ordinalize}, %Y") %></h4>
+      <p><%= simple_format(@audiofilm.description) %></p>
+      <audio src="http://audiofilms.s3.amazonaws.com/audio/<%= @audiofilm.slug %>.mp3" controls preload></audio>
+      <p class="text-center">Problems? <a href="http://audiofilms.s3.amazonaws.com/audio/<%= @audiofilm.slug %>.mp3">Click here for the <%= @audiofilm.title %> MP3</a></p>
+    </div>
 
-  	<div class="col-sm-4">
-  		<img class="img-responsive desktop" src="http://audiofilms.s3.amazonaws.com/images/<%= @audiofilm.slug %>.jpg">
-  	</div>
+    <div class="col-sm-4">
+      <img class="img-responsive desktop" src="http://audiofilms.s3.amazonaws.com/images/<%= @audiofilm.slug %>.jpg">
+    </div>
   </div>
 </div>

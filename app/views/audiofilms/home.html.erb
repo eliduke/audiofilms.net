@@ -1,41 +1,20 @@
 <div id="home">
   <div id="banner">
-
-  	<div class="row">
-  		<h1>AudioFilms</h1>
-  		<p class="lead"><em>Listen</em> to your favorite movies anytime, anywhere</p>
-  	</div>
-
-  	<div class="row">
-  		<div class="col-sm-4">
-  			<h4 class="well well-sm">Listen</h4>
-  			<p class="well well-sm">What's that one movie you've seen dozens of times? You quote lines in your head without even thinking about it. Maybe you've got a couple movies like that, I know I sure do. One time my brother and I watched Billy Madison three times in a row. I did the same thing with <em>The Rock</em> a couple years later.</p>
-  		</div>
-  		<div class="col-sm-4">
-  			<h4 class="well well-sm">Remember</h4>
-  			<p class="well well-sm">It's just like those first couple steps down into your cousins' basement: the sturdy stairs, carpeted beneath your feet, and that thin metal railing in your hand. Smells like your home away from home, and you would know that even if you were blind-folded (someone should turn <u>that</u> into a <a href="http://www.yankeecandle.com/product/cousinsbasement?referer=<%= root_url %>" target="_blank" title="Yankee Candle">Yankee Candle</a>).</p>
-  		</div>
-  		<div class="col-sm-4">
-  			<h4 class="well well-sm">See</h4>
-  			<p class="well well-sm">You've already done the hard work: you watched the same movie over &amp; over &amp; over again, like a crazy person. Now just sit back, relax, and let your brain show you what you've already seen 100 times. You're like Daredevil, but instead of fighting crime you're listening to an AudioFilm. Pretty cool, huh?</p>
-  		</div>
-  	</div>
-
-  	<div class="row"><hr /></div>
-  	<h2>Where we're going, we don't need eyes to see.</h2>
-  	<div class="row"><hr /></div>
-
+    <div class="row">
+      <h1>AudioFilms</h1>
+      <p class="lead"><em>Listen</em> to your favorite movies anytime, anywhere</p>
+    </div>
   </div>
 
   <div class="row">
     <% @audiofilms.each.with_index(1) do |audiofilm, index| %>
-    	<div class="col-xs-6 col-sm-3 col-md-2 col-lg-2">
+      <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2">
         <%= link_to slug_path(audiofilm.slug) do %>
-    		  <img class="img-responsive <%= "hide-on-small" if index > 8 %> <%= "hide-on-mobile" if index > 6 %>" src="http://audiofilms.s3.amazonaws.com/images/<%= audiofilm.slug %>.jpg">
+          <img class="img-responsive <%= "hide-on-small" if index > 8 %> <%= "hide-on-mobile" if index > 6 %>" src="http://audiofilms.s3.amazonaws.com/images/<%= audiofilm.slug %>.jpg">
         <% end %>
-    	</div>
+      </div>
     <% end %>
   </div>
 
-  <h3 class="text-center">Looking for more? Check out the <%= link_to "Master List", master_list_path %>.</h3>
+  <h3 class="text-center">Where we're going,<br/>we don't need eyes to see.</h3>
 </div>
