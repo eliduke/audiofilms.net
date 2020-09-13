@@ -4,16 +4,16 @@
     <tr>
       <th>Title</th>
       <th>Released</th>
-			<th class="text-center">MP3</th>
+      <th class="text-center">MP3</th>
     </tr>
   </thead>
   <tbody>
-		<% @audiofilms.each do |audiofilm| %>
+    <% @audiofilms.each do |audiofilm| %>
     <tr>
       <td><%= link_to audiofilm.title, slug_path(audiofilm.slug) %></td>
       <td><%= audiofilm.release.strftime("%B #{audiofilm.release.day.ordinalize}, %Y") %></td>
-			<td class="text-center"><%= link_to "mp3", "http://audiofilms.s3.amazonaws.com/audio/#{audiofilm.slug}.mp3", target: "_blank" %></td>
+      <td class="text-center"><%= link_to "mp3", "http://audiofilms.s3.amazonaws.com/audio/#{audiofilm.slug}.mp3", target: "_blank" %></td>
     </tr>
-		<% end %>
-	</tbody>
+    <% end %>
+  </tbody>
 </table>
