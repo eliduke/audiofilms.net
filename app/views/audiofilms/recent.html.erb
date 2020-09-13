@@ -1,24 +1,20 @@
 <h2>Recent Additions</h2>
 
 <% @audiofilms.each do |audiofilm| %>
+  <div class="audiofilm">
+    <div class="row">
+      <div class="col-sm-8 col-md-9 col-lg-10">
+        <h2><%= link_to audiofilm.title, slug_path(audiofilm.slug) %></h2>
+        <h4><%= audiofilm.release.strftime("%B #{audiofilm.release.day.ordinalize}, %Y") %></h4>
+        <p><%= simple_format(audiofilm.description) %></p>
+        <h4><a href="http://audiofilms.s3.amazonaws.com/audio/<%= audiofilm.slug %>.mp3">Click here for the <%= audiofilm.title %> MP3</a></h4>
+      </div>
 
-	<div class="audiofilm">
-
-		<div class="row">
-			<div class="col-sm-8 col-md-9 col-lg-10">
-				<h2><%= link_to audiofilm.title, slug_path(audiofilm.slug) %></h2>
-				<h4><%= audiofilm.release.strftime("%B #{audiofilm.release.day.ordinalize}, %Y") %></h4>
-				<p><%= simple_format(audiofilm.description) %></p>
-				<h4><a href="http://audiofilms.s3.amazonaws.com/audio/<%= audiofilm.slug %>.mp3">Click here for the <%= audiofilm.title %> MP3</a></h4>
-			</div>
-
-			<div class="col-sm-4 col-md-3 col-lg-2">
-				<img class="img-responsive" src="http://audiofilms.s3.amazonaws.com/images/<%= audiofilm.slug %>.jpg">
-			</div>
-		</div>
-
-	</div>
-
+      <div class="col-sm-4 col-md-3 col-lg-2">
+        <img class="img-responsive" src="http://audiofilms.s3.amazonaws.com/images/<%= audiofilm.slug %>.jpg">
+      </div>
+    </div>
+  </div>
 <% end %>
 
 <h3 class="text-center">Still can't find one you like? Check the <%= link_to "Master List", master_list_path %>.</h3>
