@@ -11,10 +11,10 @@ layout: default
   </div>
 
   <div class="row">
-    {% for film in site.data.films %}
+    {% for film in site.films %}
       <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2">
-        <a href="/{{film.slug}}">
-          <img class="img-responsive" src="http://audiofilms.s3.amazonaws.com/images/{{film.slug}}.jpg">
+        <a href="/{{film.permalink}}">
+          <img class="img-responsive" src="{{site.assets}}/images/{{film.permalink}}.jpg">
         </a>
       </div>
     {% endfor %}
