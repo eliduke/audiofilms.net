@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<h1>List</h1>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Release</th>
+      <th class="center">Audio</th>
+    </tr>
+  </thead>
+
+  {% assign sorted_films = site.films | sort: 'title' %}
+
+  {% for film in sorted_films %}
+    <tr>
+      <td><a href="/{{film.permalink}}">{{film.title}}</a></td>
+      <td>{{film.release | date: '%-d %b %Y'}}</td>
+      <td class="center">
+        <a href="{{site.assets}}/audio/{{film.permalink}}.mp3">mp3</a>
+      </td>
+    </tr>
+  {% endfor %}
+</table>
