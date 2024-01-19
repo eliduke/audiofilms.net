@@ -38,6 +38,28 @@ table {
   }
 }
 
+.flex-container {
+  padding: 0;
+  margin: 20px 0 0 0;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-movie {
+  padding: 0;
+  margin-bottom: 20px;
+  width: 150px;
+}
+
+
 /* MEDIA */
 
 @media (max-width: 767px) {
@@ -50,6 +72,7 @@ table {
 @media (min-width: 768px) {
   #show img.mobile { display: none }
   #show img.desktop { display: all }
+  .flex-movie { width: 200px }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

@@ -11,13 +11,13 @@ layout: default
   </div>
 
   <div class="row">
-    {% for film in site.films %}
-      <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2">
+    <div class="flex-container">
+      {% for film in site.films %}
         <a href="/{{film.permalink}}">
-          <img class="img-responsive" src="{{site.assets}}/images/{{film.permalink}}.jpg">
+          <img class="flex-movie" src="{{site.assets}}/images/{{film.permalink}}.jpg">
         </a>
-      </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
 
   <h3 class="text-center">Where we're going,<br/>we don't need eyes to see.</h3>

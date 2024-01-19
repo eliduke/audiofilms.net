@@ -8,7 +8,8 @@ layout: default
   <thead>
     <tr>
       <th>Title</th>
-      <th>Release</th>
+      <th>Released</th>
+      <th>Added</th>
       <th class="center">Audio</th>
     </tr>
   </thead>
@@ -18,7 +19,8 @@ layout: default
   {% for film in sorted_films %}
     <tr>
       <td><a href="/{{film.permalink}}">{{film.title}}</a></td>
-      <td>{{film.release | date: '%-d %b %Y'}}</td>
+      <td>{{film.released | date: '%-d %b %Y'}}</td>
+      <td>{{film.added | date: '%-d %b %Y'}}</td>
       <td class="center">
         <a href="{{site.assets}}/audio/{{film.permalink}}.mp3">mp3</a>
       </td>
