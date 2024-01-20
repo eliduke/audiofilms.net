@@ -2,12 +2,12 @@
 layout: default
 ---
 
-<h1>List</h1>
-
+<!--
 <div class="mobile-warning">
   <h2>ATTENTION!!</h2>
   <p>If you turn your phone sideways, you'll see more info in the form below.</p>
 </div>
+-->
 
 <!-- Mobile List -->
 <table class="table table-striped mobile-list">
@@ -19,9 +19,7 @@ layout: default
     </tr>
   </thead>
 
-  {% assign sorted_films = site.films | sort: 'title' %}
-
-  {% for film in sorted_films %}
+  {% for film in site.films %}
     <tr>
       <td><a href="/{{film.permalink}}">{{film.title}}</a></td>
       <td>{{film.released | date: '%Y'}}</td>
