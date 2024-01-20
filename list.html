@@ -4,7 +4,33 @@ layout: default
 
 <h1>List</h1>
 
-<table class="table table-striped">
+{% include warning.html %}
+
+<!-- Mobile List -->
+<table class="table table-striped mobile-list">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Released</th>
+      <th class="center">Audio</th>
+    </tr>
+  </thead>
+
+  {% assign sorted_films = site.films | sort: 'title' %}
+
+  {% for film in sorted_films %}
+    <tr>
+      <td><a href="/{{film.permalink}}">{{film.title}}</a></td>
+      <td>{{film.released | date: '%Y'}}</td>
+      <td class="center">
+        <a href="{{site.assets}}/audio/{{film.permalink}}.mp3">mp3</a>
+      </td>
+    </tr>
+  {% endfor %}
+</table>
+
+<!-- Desktop List -->
+<table class="table table-striped desktop-list">
   <thead>
     <tr>
       <th>Title</th>

@@ -59,8 +59,35 @@ table {
   width: 150px;
 }
 
+.mobile-warning {
+  display: block;
+  margin: 20px 0 40px 0;
+  padding: 20px;
+  border: 10px solid #ccc;
+  background-color: #eee;
+  color: #333;
+  font-weight: bold;
+
+  h3 {
+    margin: 0 0 5px 0;
+    padding: 0;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.desktop-list { display: none }
 
 /* MEDIA */
+
+@media (min-width: 481px) {
+  .mobile-warning { display: none }
+  .desktop-list { display: table }
+  .mobile-list { display: none }
+}
 
 @media (max-width: 767px) {
   #show img.mobile { display: all }
