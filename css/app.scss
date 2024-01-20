@@ -33,8 +33,11 @@ table {
 }
 
 .film {
-  h1 {
-    margin-bottom: 0;
+  h1 { margin-bottom: 0 }
+  h3 { margin-bottom: 20px }
+  p {
+    font-size: 120%;
+    margin-bottom: 20px;
   }
 }
 
