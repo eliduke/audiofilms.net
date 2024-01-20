@@ -41,9 +41,7 @@ layout: default
     </tr>
   </thead>
 
-  {% assign sorted_films = site.films | sort: 'title' %}
-
-  {% for film in sorted_films %}
+  {% for film in site.films %}
     <tr>
       <td><a href="/{{film.permalink}}">{{film.title}}</a></td>
       <td>{{film.released | date: '%-d %b %Y'}}</td>
