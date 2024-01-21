@@ -11,7 +11,7 @@ h2 { margin: 0 0 20px 0 }
 img { margin-bottom: 20px }
 audio { width: 100% }
 footer { margin-bottom: 20px }
-table { .center { text-align: center } }
+table { .right { text-align: right } }
 
 #header {
   margin: 20px 0;
@@ -67,32 +67,44 @@ table { .center { text-align: center } }
   width: 150px;
 }
 
-.mobile-warning {
+.desktop-list { display: none }
+
+hr {
   display: block;
-  margin: 20px 0 40px 0;
-  padding: 20px;
-  border: 10px solid #ccc;
-  background-color: #eee;
-  color: #333;
-  font-weight: bold;
-
-  h3 {
-    margin: 0 0 5px 0;
-    padding: 0;
-  }
-
-  p {
-    margin: 0;
-    padding: 0;
-  }
+  clear: both;
 }
 
-.desktop-list { display: none }
+h3.all-films {
+  float: left;
+  margin: 10px 0;
+}
+
+.toggle-buttons {
+  font-size: 160%;
+  float: right;
+  margin-bottom: -10px;
+
+  a { text-decoration: none }
+
+  p { margin-bottom: 0 }
+
+  .button {
+    background: #666;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 0;
+
+    &.selected {
+      background: none;
+      color: #666;
+    }
+  }
+}
 
 /* MEDIA */
 
 @media (min-width: 481px) {
-  .mobile-warning { display: none }
   .desktop-list { display: table }
   .mobile-list { display: none }
 }

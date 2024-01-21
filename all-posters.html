@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<h3 class="all-films">All films</h3>
+<p class="toggle-buttons">
+  <a href="/all-list">
+    <i class="button fas fa-list"></i>
+  </a>
+  <i class="button selected fas fa-th"></i>
+</p>
+
+<hr />
+
+<div class="row">
+  <div class="flex-container">
+    {% for film in site.films %}
+      <a href="/{{film.permalink}}">
+        <img class="flex-movie" src="{{site.assets}}/images/{{film.permalink}}.jpg">
+      </a>
+    {% endfor %}
+  </div>
+</div>

@@ -2,14 +2,17 @@
 layout: default
 ---
 
-<!--
-<div class="mobile-warning">
-  <h2>ATTENTION!!</h2>
-  <p>If you turn your phone sideways, you'll see more info in the form below.</p>
-</div>
--->
-
 {% include header.html %}
+
+<h3 class="all-films">All films</h3>
+<p class="toggle-buttons">
+  <i class="button selected fas fa-list"></i>
+  <a href="/all-posters">
+    <i class="button fas fa-th"></i>
+  </a>
+</p>
+
+<hr />
 
 <!-- Mobile List -->
 <table class="table table-striped mobile-list">
@@ -17,7 +20,7 @@ layout: default
     <tr>
       <th>Title</th>
       <th>Released</th>
-      <th class="center">Audio</th>
+      <th class="right">Audio</th>
     </tr>
   </thead>
 
@@ -25,7 +28,7 @@ layout: default
     <tr>
       <td><a href="/{{film.permalink}}">{{film.title}}</a></td>
       <td>{{film.released | date: '%Y'}}</td>
-      <td class="center">
+      <td class="right">
         <a href="{{site.assets}}/audio/{{film.permalink}}.mp3">mp3</a>
       </td>
     </tr>
@@ -39,7 +42,7 @@ layout: default
       <th>Title</th>
       <th>Released</th>
       <th>Added</th>
-      <th class="center">Audio</th>
+      <th class="right">Audio</th>
     </tr>
   </thead>
 
@@ -48,7 +51,7 @@ layout: default
       <td><a href="/{{film.permalink}}">{{film.title}}</a></td>
       <td>{{film.released | date: '%-d %b %Y'}}</td>
       <td>{{film.added | date: '%-d %b %Y'}}</td>
-      <td class="center">
+      <td class="right">
         <a href="{{site.assets}}/audio/{{film.permalink}}.mp3">mp3</a>
       </td>
     </tr>
