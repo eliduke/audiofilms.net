@@ -90,13 +90,13 @@ h3.all-films {
 
   .button {
     background: none;
-    color: #666;
+    color: #999;
     padding: 5px;
     border-radius: 5px;
     margin-bottom: 0;
 
     &.selected {
-      background: #666;
+      background: #999;
       color: white;
     }
   }
