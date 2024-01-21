@@ -6,7 +6,8 @@ layout: default
 
 <div class="row">
   <div class="flex-container">
-    {% for film in site.films %}
+    {% assign sorted_films = site.films | sort: "added" | reverse %}
+    {% for film in sorted_films limit: 10 %}
       <a href="/{{film.permalink}}">
         <img class="flex-movie" src="{{site.assets}}/images/{{film.permalink}}.jpg">
       </a>
