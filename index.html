@@ -2,23 +2,16 @@
 layout: default
 ---
 
-<div id="home">
-  <div id="banner">
-    <div class="row">
-      <h1>AudioFilms</h1>
-      <p class="lead"><em>Listen</em> to your favorite movies</p>
-    </div>
-  </div>
+{% include header.html %}
 
-  <div class="row">
-    <div class="flex-container">
-      {% for film in site.films %}
-        <a href="/{{film.permalink}}">
-          <img class="flex-movie" src="{{site.assets}}/images/{{film.permalink}}.jpg">
-        </a>
-      {% endfor %}
-    </div>
+<div class="row">
+  <div class="flex-container">
+    {% for film in site.films %}
+      <a href="/{{film.permalink}}">
+        <img class="flex-movie" src="{{site.assets}}/images/{{film.permalink}}.jpg">
+      </a>
+    {% endfor %}
   </div>
-
-  <h3 class="text-center">Where we're going,<br/>we don't need eyes to see.</h3>
 </div>
+
+<h3 class="text-center">Where we're going,<br/>we don't need eyes to see.</h3>

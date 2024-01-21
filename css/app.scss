@@ -11,8 +11,9 @@ h2 { margin: 0 0 20px 0 }
 img { margin-bottom: 20px }
 audio { width: 100% }
 footer { margin-bottom: 20px }
+table { .center { text-align: center } }
 
-#banner {
+#header {
   margin: 20px 0;
 
   h1 {
@@ -24,12 +25,16 @@ footer { margin-bottom: 20px }
   p.lead {
     font-size: 120%;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 }
 
-table {
-  .center { text-align: center }
+#about {
+  p {
+    font-size: 140%;
+    margin-bottom: 20px;
+    color: #333;
+  }
 }
 
 .film {
@@ -106,19 +111,16 @@ table {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  #banner h1 { font-size: 800% }
-  #banner p.lead { font-size: 200% }
-  #home img.hide-on-small { display: none }
+  #header h1 { font-size: 800% }
+  #header p.lead { font-size: 200% }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  #banner h1 { font-size: 1000% }
-  #banner p.lead { font-size: 250% }
-  #home h2 { font-size: 250% }
+  #header h1 { font-size: 1000% }
+  #header p.lead { font-size: 250% }
 }
 
 @media (min-width: 1200px) {
-  #banner h1 { font-size: 1200% }
-  #banner p.lead { font-size: 300% }
-  #home h2 { font-size: 300% }
+  #header h1 { font-size: 1200% }
+  #header p.lead { font-size: 300% }
 }
