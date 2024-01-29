@@ -37,12 +37,20 @@ table { .right { text-align: right } }
   }
 }
 
-.film {
+#film {
   h1 { margin-bottom: 0 }
   h3 { margin-bottom: 20px }
+  img { margin: 10px 0 5px 0 }
+
   p {
     font-size: 120%;
     margin-bottom: 20px;
+  }
+
+  p.film-links {
+    font-size: 90%;
+    text-align: center;
+    margin: 0;
   }
 }
 
