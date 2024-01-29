@@ -7,7 +7,7 @@ layout: default
 <div class="row">
   <div class="flex-container">
     {% assign sorted_films = site.films | sort: "added" | reverse %}
-    {% for film in sorted_films limit: 10 %}
+    {% for film in sorted_films limit: 30 %}
       <a href="/{{film.permalink}}">
         <img class="flex-movie" src="{{site.assets}}/images/{{film.permalink}}.jpg">
       </a>
@@ -15,4 +15,4 @@ layout: default
   </div>
 </div>
 
-<h3 class="text-center">Where we're going,<br/>we don't need eyes to see.</h3>
+<h4 class="text-center">These are the 30 newest additions to the catalog. Check out <a href="/all-list">the big list</a> to <em>see</em> everything we've got at the moment.</h4>
