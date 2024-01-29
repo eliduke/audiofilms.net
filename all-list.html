@@ -17,8 +17,7 @@ layout: default
   <thead>
     <tr>
       <th>Title</th>
-      <th>Released</th>
-      <th class="right">Audio</th>
+      <th>Year</th>
     </tr>
   </thead>
 
@@ -26,9 +25,6 @@ layout: default
     <tr>
       <td><a href="/{{film.permalink}}">{{film.title}}</a></td>
       <td>{{film.released | date: '%Y'}}</td>
-      <td class="right">
-        <a href="{{site.assets}}/audio/{{film.permalink}}.mp3">mp3</a>
-      </td>
     </tr>
   {% endfor %}
 </table>
