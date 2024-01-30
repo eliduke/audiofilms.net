@@ -22,7 +22,7 @@ require 'slugify'
 #
 # napoleon-dynamite.html
 
-Tmdb::Api.key("789c6455270cf5d34bfd40a11d5e4652")
+Tmdb::Api.key("API_KEY")
 
 input_ids = ARGV
 
