@@ -20,7 +20,7 @@ require 'slugify'
 # from the script is the full content of one of the film files.
 # Just copy and paste that into a slugified file name like:
 #
-# napoleon-dynamite.html
+# napoleon-dynamite.md
 
 Tmdb::Api.key("API_KEY")
 
