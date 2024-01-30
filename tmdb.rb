@@ -46,7 +46,7 @@ input_ids.each do |id|
   end
 
   puts "---"
-  puts "id: #{movie['id']}"
+  puts "tmdb-id: #{movie['id']}"
   puts "layout: film"
   puts "added: #{Date.today.strftime("%Y-%m-%d")}"
   puts "released: #{movie['release_date']}"
