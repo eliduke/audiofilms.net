@@ -1,9 +1,10 @@
 require 'themoviedb'
 require 'slugify'
 
-# To use this utility, first you need to get an API_KEY from
-# themoviedb.org. Input that below, save the file, but please
-# DO NOT commit your API key to the repo. When you are ready,
+# To use this utility, first you need to get an API Key from
+# themoviedb.org. It's free and super duper ding dang simple.
+# Copy and paste your key down below and save the file (please
+# DO NOT commit your API key to the repo). When you are ready,
 # go to the root directory of this repo and run these command:
 #
 # $ ruby tmdb.org 12345
@@ -21,19 +22,27 @@ require 'slugify'
 # Just copy and paste that into a slugified file name like:
 #
 # napoleon-dynamite.md
+#
+# Add your API KEY here, save the file, and give it a go!
+#
+###############################################################
+your_api_key = "API_KEY"
+###############################################################
 
-Tmdb::Api.key("API_KEY")
+if your_api_key == "API_KEY"
+  puts "You gotta add your API Key to tmdb.rb, ya dummy."
+  return
+end
+
+Tmdb::Api.key(api_key)
 
 input_ids = ARGV
 
 if input_ids.empty?
-  puts "You must provide at least one movie id, like this:"
-  puts ""
-  puts "$ ruby tmdb.rb 81933"
-  puts ""
-  puts "Or you can provide multiple ids at once, like this:"
-  puts ""
-  puts "$ ruby tmdb.rb 666 665 664"
+  puts "You must provide at least one movie id (from themoviedb.org), like this:\n\n"
+  puts "$ ruby tmdb.rb 81933\n\n"
+  puts "Or you can provide multiple ids at once, like this:\n\n"
+  puts "$ ruby tmdb.rb 666 665 664\n\n"
   return
 end
 
@@ -53,6 +62,5 @@ input_ids.each do |id|
   puts "title: #{movie['original_title']}"
   puts "permalink: #{movie['original_title'].slugify}"
   puts "description: #{movie['overview']}"
-  puts "---"
-  puts ""
+  puts "---\n\n"
 end
