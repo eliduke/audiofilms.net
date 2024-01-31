@@ -34,7 +34,7 @@ if your_api_key == "API_KEY"
   return
 end
 
-Tmdb::Api.key(api_key)
+Tmdb::Api.key(your_api_key)
 
 input_ids = ARGV
 
