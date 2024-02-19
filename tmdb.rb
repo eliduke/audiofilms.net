@@ -26,7 +26,7 @@ require 'slugify'
 # Add your API KEY here, save the file, and give it a go!
 #
 ###############################################################
-your_api_key = "API_KEY"
+your_api_key = "789c6455270cf5d34bfd40a11d5e4652"
 ###############################################################
 
 if your_api_key == "API_KEY"
@@ -54,13 +54,21 @@ input_ids.each do |id|
     return
   end
 
-  puts "---"
-  puts "tmdb-id: #{movie['id']}"
-  puts "layout: film"
-  puts "added: #{Date.today.strftime("%Y-%m-%d")}"
-  puts "released: #{movie['release_date']}"
-  puts "title: #{movie['original_title']}"
-  puts "permalink: #{movie['original_title'].slugify}"
-  puts "description: #{movie['overview']}"
-  puts "---\n\n"
+  slug = movie['original_title'].slugify
+
+  File.open("_films/#{slug}.md", "w") do |f|
+    f.write(
+    <<~EOS
+    ---
+    tmdb-id: #{movie['id']}
+    layout: film
+    added: #{Date.today.strftime("%Y-%m-%d")}
+    released: #{movie['release_date']}
+    title: #{movie['original_title']}
+    permalink: #{slug}
+    description: #{movie['overview']}
+    ---
+    EOS
+    )
+  end
 end
