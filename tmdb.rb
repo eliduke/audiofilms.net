@@ -17,13 +17,10 @@ require 'slugify'
 # https://www.themoviedb.org/movie/8193-napoleon-dynamite
 #
 # The id for Napolean Dynamite is right there: 8193. So I copy
-# that and then paste it in with the script up above. The output
-# from the script is the full content of one of the film files.
-# Just copy and paste that into a slugified file name like:
+# that and then paste it in with the script up above. The script
+# then automatically creates the necessary file with the output.
 #
 # napoleon-dynamite.md
-#
-# Add your API KEY here, save the file, and give it a go!
 #
 ###############################################################
 your_api_key = "API_KEY"
