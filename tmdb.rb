@@ -26,7 +26,7 @@ require 'slugify'
 # Add your API KEY here, save the file, and give it a go!
 #
 ###############################################################
-your_api_key = "789c6455270cf5d34bfd40a11d5e4652"
+your_api_key = "API_KEY"
 ###############################################################
 
 if your_api_key == "API_KEY"
