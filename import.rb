@@ -85,7 +85,8 @@ input_ids.each do |id|
     released: #{movie['release_date']}
     title: #{title}
     permalink: #{slug}
-    description: #{movie['overview']}
+    description: >
+      #{movie['overview']}
     ---
     EOS
     )
