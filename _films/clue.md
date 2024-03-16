@@ -3,7 +3,9 @@ tmdb-id: 15196
 layout: film
 added: 2017-09-18
 released: 1985-12-13
-title: Clue
+title: >
+  Clue
 permalink: clue
-description: "Clue finds six colorful dinner guests gathered at the mansion of their host, Mr. Boddy -- who turns up dead after his secret is exposed: He was blackmailing all of them. With the killer among them, the guests and Boddy's chatty butler must suss out the culprit before the body count rises."
+description: >
+  Clue finds six colorful dinner guests gathered at the mansion of their host, Mr. Boddy -- who turns up dead after his secret is exposed: He was blackmailing all of them. With the killer among them, the guests and Boddy's chatty butler must suss out the culprit before the body count rises.
 ---

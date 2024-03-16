@@ -28,12 +28,12 @@ require 'pry'
 
 Tmdb::Api.key(ENV['TMDB_API_KEY'])
 
-BunnyCdn.configure do |config|
-  config.apiKey = ENV['BUNNY_API_KEY']
-  config.storageZone = "audiofilms"
-  config.region = "la"
-  config.accessKey = ENV['BUNNY_ACCESS_KEY']
-end
+# BunnyCdn.configure do |config|
+#   config.apiKey = ENV['BUNNY_API_KEY']
+#   config.storageZone = "audiofilms"
+#   config.region = "la"
+#   config.accessKey = ENV['BUNNY_ACCESS_KEY']
+# end
 
 input_ids = ARGV
 
@@ -65,14 +65,14 @@ input_ids.each do |id|
 
   puts "IMPORTING - #{title}..."
 
-  puts "* Uploading image file..."
-  URI.open("https://image.tmdb.org/t/p/original/#{movie['poster_path']}") do |image|
-    path = "#{slug}.jpg"
-    File.open(path, "wb") { |file| file.write(image.read) }
-    if BunnyCdn::Storage.uploadFile('images', path)
-      File.delete(path)
-    end
-  end
+  # puts "* Uploading image file..."
+  # URI.open("https://image.tmdb.org/t/p/original/#{movie['poster_path']}") do |image|
+  #   path = "#{slug}.jpg"
+  #   File.open(path, "wb") { |file| file.write(image.read) }
+  #   if BunnyCdn::Storage.uploadFile('images', path)
+  #     File.delete(path)
+  #   end
+  # end
 
   puts "* Creating film file..."
   File.open("_films/#{slug}.md", "w") do |f|
@@ -83,7 +83,8 @@ input_ids.each do |id|
     layout: film
     added: #{Date.today.strftime("%F")}
     released: #{movie['release_date']}
-    title: #{title}
+    title: >
+      #{title}
     permalink: #{slug}
     description: >
       #{movie['overview']}

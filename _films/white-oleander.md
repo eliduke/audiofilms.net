@@ -3,7 +3,9 @@ tmdb-id: 10994
 layout: film
 added: 2019-01-31
 released: 2002-10-11
-title: White Oleander
+title: >
+  White Oleander
 permalink: white-oleander
-description: A teenager journeys through a series of foster homes after her mother goes to prison for committing a crime of passion.
+description: >
+  A teenager journeys through a series of foster homes after her mother goes to prison for committing a crime of passion.
 ---
