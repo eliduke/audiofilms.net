@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/eliduke/Slugify
-  revision: 070dc770ba15060bc17fedc4b581e660bf4876a2
+  revision: 286ccdfcae7efa4fc5db3a67d05bc2b8a325cd06
   specs:
     slugify (1.0.7)
 
