@@ -27,7 +27,7 @@ Dir['_films/*'].each do |film_file_path|
   film_yaml  = YAML.load(film_file.read, permitted_classes: [Date])
 
   # This is for Peter and the Wolf
-  next unless film_yaml['tmdb-id']
+  next if film_yaml['tmdb-id'].nil?
 
   tmdb_movie = Tmdb::Movie.detail(film_yaml['tmdb-id'])
 
