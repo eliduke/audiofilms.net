@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/eliduke/Slugify
+  revision: 070dc770ba15060bc17fedc4b581e660bf4876a2
+  specs:
+    slugify (1.0.7)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -124,7 +130,6 @@ GEM
       google-protobuf (>= 3.25, < 5.0)
     sass-embedded (1.72.0-x86_64-linux-musl)
       google-protobuf (>= 3.25, < 5.0)
-    slugify (1.0.7)
     terminal-table (3.0.2)
       unicode-display_width (>= 1.1.1, < 3)
     themoviedb (1.0.1)
@@ -157,7 +162,7 @@ DEPENDENCIES
   dotenv
   jekyll (~> 4.3)
   pry
-  slugify
+  slugify!
   themoviedb
 
 RUBY VERSION
