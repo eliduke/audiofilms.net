@@ -15,7 +15,7 @@ layout: default
 <div class="row">
   <div class="flex-container">
     {% for film in site.films %}
-      <a href="/{{film.permalink}}">
+      <a href="/{{film.url}}">
         <img class="flex-movie" src="{{site.assets}}/images/{{film.permalink}}.jpg">
       </a>
     {% endfor %}
