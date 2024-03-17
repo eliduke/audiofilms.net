@@ -3,7 +3,7 @@ tmdb-id: 16448
 layout: film
 added: 2024-01-27
 released: 1996-08-21
-permalink: waiting-for-guffman-1996
+permalink: films/waiting-for-guffman-1996
 title: >
   Waiting for Guffman
 description: >

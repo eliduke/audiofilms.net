@@ -3,7 +3,7 @@ tmdb-id: 9273
 layout: film
 added: 2024-01-28
 released: 1995-11-10
-permalink: ace-ventura-when-nature-calls-1995
+permalink: films/ace-ventura-when-nature-calls-1995
 title: >
   Ace Ventura: When Nature Calls
 description: >

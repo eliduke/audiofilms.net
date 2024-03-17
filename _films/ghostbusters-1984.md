@@ -3,7 +3,7 @@ tmdb-id: 620
 layout: film
 added: 2024-01-27
 released: 1984-06-08
-permalink: ghostbusters-1984
+permalink: films/ghostbusters-1984
 title: >
   Ghostbusters
 description: >

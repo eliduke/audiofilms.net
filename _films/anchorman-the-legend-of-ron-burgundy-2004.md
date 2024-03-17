@@ -3,7 +3,7 @@ tmdb-id: 8699
 layout: film
 added: 2014-11-25
 released: 2004-06-28
-permalink: anchorman-the-legend-of-ron-burgundy-2004
+permalink: films/anchorman-the-legend-of-ron-burgundy-2004
 title: >
   Anchorman: The Legend of Ron Burgundy
 description: >

@@ -3,7 +3,7 @@ tmdb-id: 863
 layout: film
 added: 2024-01-27
 released: 1999-10-30
-permalink: toy-story-2-1999
+permalink: films/toy-story-2-1999
 title: >
   Toy Story 2
 description: >

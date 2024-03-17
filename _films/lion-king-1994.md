@@ -3,7 +3,7 @@ tmdb-id: 8587
 layout: film
 added: 2024-01-28
 released: 1994-06-24
-permalink: lion-king-1994
+permalink: films/lion-king-1994
 title: >
   The Lion King
 description: >

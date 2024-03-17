@@ -43,7 +43,7 @@ Dir['_films/*'].each do |film_file_path|
     layout: film
     added: #{film_yaml['added']}
     released: #{tmdb_movie['release_date']}
-    permalink: #{slug}
+    permalink: films/#{slug}
     title: >
       #{title}
     description: >

@@ -3,7 +3,7 @@ tmdb-id: 9078
 layout: film
 added: 2024-01-27
 released: 1963-12-25
-permalink: sword-in-the-stone-1963
+permalink: films/sword-in-the-stone-1963
 title: >
   The Sword in the Stone
 description: >

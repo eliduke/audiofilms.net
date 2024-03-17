@@ -3,7 +3,7 @@ tmdb-id: 18162
 layout: film
 added: 2024-01-18
 released: 2009-06-05
-permalink: land-of-the-lost-2009
+permalink: films/land-of-the-lost-2009
 title: >
   Land of the Lost
 description: >

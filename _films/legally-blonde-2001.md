@@ -3,7 +3,7 @@ tmdb-id: 8835
 layout: film
 added: 2024-01-20
 released: 2001-07-13
-permalink: legally-blonde-2001
+permalink: films/legally-blonde-2001
 title: >
   Legally Blonde
 description: >

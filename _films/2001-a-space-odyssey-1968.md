@@ -3,7 +3,7 @@ tmdb-id: 62
 layout: film
 added: 2024-01-18
 released: 1968-04-02
-permalink: 2001-a-space-odyssey-1968
+permalink: films/2001-a-space-odyssey-1968
 title: >
   2001: A Space Odyssey
 description: >

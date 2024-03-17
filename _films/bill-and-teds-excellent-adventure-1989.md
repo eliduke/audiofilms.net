@@ -3,7 +3,7 @@ tmdb-id: 1648
 layout: film
 added: 2024-01-27
 released: 1989-02-17
-permalink: bill-and-teds-excellent-adventure-1989
+permalink: films/bill-and-teds-excellent-adventure-1989
 title: >
   Bill & Ted's Excellent Adventure
 description: >

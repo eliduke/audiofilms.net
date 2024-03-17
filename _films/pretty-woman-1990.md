@@ -3,7 +3,7 @@ tmdb-id: 114
 layout: film
 added: 2024-01-20
 released: 1990-03-23
-permalink: pretty-woman-1990
+permalink: films/pretty-woman-1990
 title: >
   Pretty Woman
 description: >
