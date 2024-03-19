@@ -3,6 +3,7 @@ tmdb-id: 5683
 layout: film
 added: 2022-03-22
 released: 1985-07-26
+slug: pee-wees-big-adventure-1985
 permalink: films/pee-wees-big-adventure-1985
 title: >
   Pee-wee's Big Adventure

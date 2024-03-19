@@ -3,6 +3,7 @@ tmdb-id: 10144
 layout: film
 added: 2024-01-28
 released: 1989-11-17
+slug: little-mermaid-1989
 permalink: films/little-mermaid-1989
 title: >
   The Little Mermaid

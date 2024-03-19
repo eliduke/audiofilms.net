@@ -3,6 +3,7 @@ tmdb-id: 7446
 layout: film
 added: 2024-01-21
 released: 2008-08-09
+slug: tropic-thunder-2008
 permalink: films/tropic-thunder-2008
 title: >
   Tropic Thunder

@@ -3,6 +3,7 @@ tmdb-id: 11381
 layout: film
 added: 2024-01-28
 released: 1995-03-31
+slug: tommy-boy-1995
 permalink: films/tommy-boy-1995
 title: >
   Tommy Boy

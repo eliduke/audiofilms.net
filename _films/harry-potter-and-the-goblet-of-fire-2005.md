@@ -3,6 +3,7 @@ tmdb-id: 674
 layout: film
 added: 2024-01-21
 released: 2005-11-16
+slug: harry-potter-and-the-goblet-of-fire-2005
 permalink: films/harry-potter-and-the-goblet-of-fire-2005
 title: >
   Harry Potter and the Goblet of Fire

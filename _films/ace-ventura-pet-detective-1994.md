@@ -3,6 +3,7 @@ tmdb-id: 3049
 layout: film
 added: 2014-11-25
 released: 1994-02-04
+slug: ace-ventura-pet-detective-1994
 permalink: films/ace-ventura-pet-detective-1994
 title: >
   Ace Ventura: Pet Detective

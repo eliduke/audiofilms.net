@@ -3,6 +3,7 @@ tmdb-id: 13785
 layout: film
 added: 2014-11-25
 released: 2000-09-29
+slug: best-in-show-2000
 permalink: films/best-in-show-2000
 title: >
   Best in Show

@@ -3,6 +3,7 @@ tmdb-id: 13370
 layout: film
 added: 2023-08-22
 released: 2003-04-16
+slug: mighty-wind-2003
 permalink: films/mighty-wind-2003
 title: >
   A Mighty Wind

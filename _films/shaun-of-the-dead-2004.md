@@ -3,6 +3,7 @@ tmdb-id: 747
 layout: film
 added: 2023-04-23
 released: 2004-04-09
+slug: shaun-of-the-dead-2004
 permalink: films/shaun-of-the-dead-2004
 title: >
   Shaun of the Dead

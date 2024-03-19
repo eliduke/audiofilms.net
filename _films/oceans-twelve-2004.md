@@ -3,6 +3,7 @@ tmdb-id: 163
 layout: film
 added: 2024-01-21
 released: 2004-12-09
+slug: oceans-twelve-2004
 permalink: films/oceans-twelve-2004
 title: >
   Ocean's Twelve
