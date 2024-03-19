@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/eliduke/Slugify
-  revision: 286ccdfcae7efa4fc5db3a67d05bc2b8a325cd06
+  revision: ea09b9ad88a6db7e33b315a989437a872c0f8bc0
   specs:
     slugify (1.0.7)
 
@@ -97,7 +97,7 @@ GEM
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
     rexml (3.2.6)
-    rouge (4.2.0)
+    rouge (4.2.1)
     safe_yaml (1.0.5)
     sass-embedded (1.72.0)
       google-protobuf (>= 3.25, < 5.0)
