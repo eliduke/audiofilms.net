@@ -1,9 +1,9 @@
 require 'themoviedb'
-require 'slugify'
 require 'open-uri'
-require 'bunny_cdn'
 require 'dotenv/load'
 require 'pry'
+
+require_relative 'sluggit'
 
 # To use this utility, first you need to get an API Key from
 # themoviedb.org. It's free and super duper ding dang simple.
@@ -28,13 +28,6 @@ require 'pry'
 
 Tmdb::Api.key(ENV['TMDB_API_KEY'])
 
-# BunnyCdn.configure do |config|
-#   config.apiKey = ENV['BUNNY_API_KEY']
-#   config.storageZone = "audiofilms"
-#   config.region = "la"
-#   config.accessKey = ENV['BUNNY_ACCESS_KEY']
-# end
-
 input_ids = ARGV
 
 if input_ids.empty?
@@ -45,17 +38,11 @@ if input_ids.empty?
   return
 end
 
+puts "Creating _film files..."
 input_ids.each do |id|
   movie = Tmdb::Movie.detail(id)
-
-  # RETURN if movie can't be found
-  if movie['success'] == false
-    puts "The resource you requested could not be found."
-    return
-  end
-
   title = movie['original_title']
-  slug = title.slugify
+  slug  = sluggit(title, movie['release_date'])
 
   # RETURN because the episode has already been imported!
   if File.exist?("_films/#{slug}.md")
@@ -63,29 +50,19 @@ input_ids.each do |id|
     return
   end
 
-  puts "IMPORTING - #{title}..."
-
-  # puts "* Uploading image file..."
-  # URI.open("https://image.tmdb.org/t/p/original/#{movie['poster_path']}") do |image|
-  #   path = "#{slug}.jpg"
-  #   File.open(path, "wb") { |file| file.write(image.read) }
-  #   if BunnyCdn::Storage.uploadFile('images', path)
-  #     File.delete(path)
-  #   end
-  # end
-
-  puts "* Creating film file..."
+  puts "* Creating #{title} film file..."
   File.open("_films/#{slug}.md", "w") do |f|
     f.write(
     <<~EOS
     ---
     tmdb-id: #{movie['id']}
     layout: film
-    added: #{Date.today.strftime("%F")}
+    added: #{film_yaml['added']}
     released: #{movie['release_date']}
+    slug: #{slug}
+    permalink: films/#{slug}
     title: >
       #{title}
-    permalink: #{slug}
     description: >
       #{movie['overview']}
     ---
