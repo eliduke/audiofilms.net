@@ -13,6 +13,12 @@ audio { width: 100% }
 footer { margin-bottom: 20px }
 table { .right { text-align: right } }
 
+a { color: #9a9ce7 }
+a:hover {
+  color: #7b7cb8;
+  text-decoration: #3a4c5a
+}
+
 .navbar-default {
   background-color: #0D243F;
 
