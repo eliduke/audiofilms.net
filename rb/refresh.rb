@@ -7,7 +7,7 @@ require_relative 'sluggit'
 
 Tmdb::Api.key(ENV['TMDB_API_KEY'])
 
-puts "Creating _film files..."
+puts "Refreshing _film files..."
 Dir['_films/*'].each do |film_file_path|
   film_file = File.open(film_file_path)
   film_yaml = YAML.load(film_file.read, permitted_classes: [Date])
