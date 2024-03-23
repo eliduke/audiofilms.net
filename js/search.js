@@ -44,7 +44,6 @@
       this.field('title', { boost: 10 });
       this.field('description', { boost: 9 });
       this.field('released');
-      this.field('added');
 
       for (var index in window.store) {
         this.add({
@@ -52,8 +51,7 @@
           'slug': window.store[index].slug,
           'title': window.store[index].title,
           'description': window.store[index].description,
-          'released': window.store[index].released,
-          'added': window.store[index].added
+          'released': window.store[index].released
         });
       }
     });

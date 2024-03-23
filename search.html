@@ -24,7 +24,6 @@ description: Find your favorite episodes of This American Life
         "title": {{ film.title | jsonify }},
         "description": {{ film.description | strip | jsonify }},
         "released": {{ film.released | date: '%-d %B %Y' | jsonify }},
-        "added": {{ film.added | date: '%-d %M %Y' | jsonify }},
         "url": {{ film.permalink | jsonify }}
       },
     {% endfor %}
