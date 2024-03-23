@@ -1,0 +1,35 @@
+---
+layout: default
+title: Search
+description: Find your favorite episodes of This American Life
+---
+
+<form action="/search.html" method="get">
+  <input
+    type="text"
+    id="search-box"
+    name="query"
+    class="form-control input-lg",
+    placeholder="search: type and then hit enter"
+  >
+</form>
+
+<ul id="search-results" class="list list-unstyled"></ul>
+
+<script>
+  window.store = [
+    {% for film in site.films %}
+      {
+        "slug": {{ film.slug | jsonify }},
+        "title": {{ film.title | jsonify }},
+        "description": {{ film.description | strip | jsonify }},
+        "released": {{ film.released | date: '%-d %B %Y' | jsonify }},
+        "added": {{ film.added | date: '%-d %M %Y' | jsonify }},
+        "url": {{ film.permalink | jsonify }}
+      },
+    {% endfor %}
+  ]
+</script>
+
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script src="/js/search.js"></script>
