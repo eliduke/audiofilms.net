@@ -4,7 +4,6 @@ layout: film
 added: 2024-01-27
 released: 1995-10-30
 slug: toy-story-1995
-permalink: films/toy-story-1995
 title: >
   Toy Story
 description: >

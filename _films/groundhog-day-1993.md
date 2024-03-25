@@ -4,7 +4,6 @@ layout: film
 added: 2019-10-18
 released: 1993-02-11
 slug: groundhog-day-1993
-permalink: films/groundhog-day-1993
 title: >
   Groundhog Day
 description: >

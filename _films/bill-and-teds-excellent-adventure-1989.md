@@ -4,7 +4,6 @@ layout: film
 added: 2024-01-27
 released: 1989-02-17
 slug: bill-and-teds-excellent-adventure-1989
-permalink: films/bill-and-teds-excellent-adventure-1989
 title: >
   Bill & Ted's Excellent Adventure
 description: >

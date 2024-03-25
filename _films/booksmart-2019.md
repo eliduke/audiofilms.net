@@ -4,7 +4,6 @@ layout: film
 added: 2024-01-27
 released: 2019-05-24
 slug: booksmart-2019
-permalink: films/booksmart-2019
 title: >
   Booksmart
 description: >

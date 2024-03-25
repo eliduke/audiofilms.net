@@ -3,7 +3,6 @@ tmdb-id:
 layout: film
 added: 2024-01-27
 released: 1936-05-02
-permalink: peter-and-the-wolf-1955
 title: >
   Peter and the Wolf
 description: >

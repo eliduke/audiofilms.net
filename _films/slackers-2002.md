@@ -4,7 +4,6 @@ layout: film
 added: 2023-03-05
 released: 2002-02-01
 slug: slackers-2002
-permalink: films/slackers-2002
 title: >
   Slackers
 description: >

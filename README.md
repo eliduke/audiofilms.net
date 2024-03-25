@@ -26,7 +26,6 @@ layout:
 added:
 released:
 slug:
-permalink:
 title:
 description:
 ```
@@ -39,6 +38,6 @@ Also, I had to [fork the slugify gem](https://github.com/eliduke/Slugify) becaus
 
 <img src="https://github.com/eliduke/audiofilms.net/assets/1372520/63276ab0-32cb-42a0-b4e1-e9c98a642e76" alt="A screenshot of the diff between my fork of the Slugify gem" width="400"/>
 
-I wrapped all that up in `/rb/sluggit.rb` where I got even more specific about my sluggification needs because I don't want movie titles to start with "The" or "A" and throw off the sorting of things. In those instances, the actual metadata title is correct and contains all the words of the movie title, but the file name / slug / permalink don't include it so that it sits correctly in the list of all the other films.
+I wrapped all that up in `/rb/sluggit.rb` where I got even more specific about my sluggification needs because I don't want movie titles to start with "The" or "A" and throw off the sorting of things. In those instances, the actual metadata title is correct and contains all the words of the movie title, but the file name / slug don't include it so that it sits correctly in the list of all the other films.
 
 All film posters and audios are hosted with [bunny.net](https://bunny.net), a super duper simple and inexpensive storage / CDN service that I have really come to love. For simple projects, is sooooo much easier than S3. Highly recommend.

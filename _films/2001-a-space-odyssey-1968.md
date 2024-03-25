@@ -4,7 +4,6 @@ layout: film
 added: 2024-01-18
 released: 1968-04-02
 slug: 2001-a-space-odyssey-1968
-permalink: films/2001-a-space-odyssey-1968
 title: >
   2001: A Space Odyssey
 description: >

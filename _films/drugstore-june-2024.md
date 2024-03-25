@@ -4,7 +4,6 @@ layout: film
 added: 2024-03-16
 released: 2024-02-23
 slug: drugstore-june-2024
-permalink: films/drugstore-june-2024
 title: >
   Drugstore June
 description: >

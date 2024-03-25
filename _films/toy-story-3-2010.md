@@ -4,7 +4,6 @@ layout: film
 added: 2024-01-27
 released: 2010-06-16
 slug: toy-story-3-2010
-permalink: films/toy-story-3-2010
 title: >
   Toy Story 3
 description: >

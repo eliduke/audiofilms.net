@@ -4,7 +4,6 @@ layout: film
 added: 2024-03-16
 released: 1984-03-02
 slug: this-is-spinal-tap-1984
-permalink: films/this-is-spinal-tap-1984
 title: >
   This Is Spinal Tap
 description: >

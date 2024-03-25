@@ -4,7 +4,6 @@ layout: film
 added: 2014-11-25
 released: 1998-03-06
 slug: big-lebowski-1998
-permalink: films/big-lebowski-1998
 title: >
   The Big Lebowski
 description: >

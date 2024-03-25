@@ -29,7 +29,6 @@ Dir['_films/*'].each do |film_file_path|
     added: #{film_yaml['added']}
     released: #{movie['release_date']}
     slug: #{slug}
-    permalink: films/#{slug}
     title: >
       #{title}
     description: >

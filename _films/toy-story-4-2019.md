@@ -4,7 +4,6 @@ layout: film
 added: 2024-01-27
 released: 2019-06-19
 slug: toy-story-4-2019
-permalink: films/toy-story-4-2019
 title: >
   Toy Story 4
 description: >

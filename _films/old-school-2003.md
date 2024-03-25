@@ -4,7 +4,6 @@ layout: film
 added: 2019-11-10
 released: 2003-02-21
 slug: old-school-2003
-permalink: films/old-school-2003
 title: >
   Old School
 description: >

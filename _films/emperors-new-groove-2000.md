@@ -4,7 +4,6 @@ layout: film
 added: 2024-01-27
 released: 2000-12-15
 slug: emperors-new-groove-2000
-permalink: films/emperors-new-groove-2000
 title: >
   The Emperor's New Groove
 description: >

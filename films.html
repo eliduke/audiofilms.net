@@ -33,7 +33,7 @@ layout: default
 
   {% for film in site.films %}
     <tr>
-      <td><a href="/{{film.permalink}}">{{film.title}}</a></td>
+      <td><a href="{{film.id}}">{{film.title}}</a></td>
       <td>{{film.released | date: '%Y'}}</td>
     </tr>
   {% endfor %}
@@ -53,11 +53,11 @@ layout: default
 
   {% for film in site.films %}
     <tr>
-      <td><a href="/{{film.permalink}}">{{film.title}}</a></td>
+      <td><a href="{{film.id}}">{{film.title}}</a></td>
       <td>{{film.released | date: '%-d %b %Y'}}</td>
       <td>{{film.added | date: '%-d %b %Y'}}</td>
       <td class="text-center">
-        <a href="{{site.assets}}/audios/{{film.permalink}}.mp3">mp3</a>
+        <a href="{{site.assets}}/audios/{{film.slug}}.mp3">mp3</a>
       </td>
       <td class="text-center">
         <a href="https://www.themoviedb.org/movie/{{film.tmdb-id}}" target="_blank">

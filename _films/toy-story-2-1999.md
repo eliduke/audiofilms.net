@@ -4,7 +4,6 @@ layout: film
 added: 2024-01-27
 released: 1999-10-30
 slug: toy-story-2-1999
-permalink: films/toy-story-2-1999
 title: >
   Toy Story 2
 description: >

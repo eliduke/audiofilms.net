@@ -4,7 +4,6 @@ layout: film
 added: 2024-01-27
 released: 1996-08-21
 slug: waiting-for-guffman-1996
-permalink: films/waiting-for-guffman-1996
 title: >
   Waiting for Guffman
 description: >

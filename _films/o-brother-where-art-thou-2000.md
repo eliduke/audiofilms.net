@@ -4,7 +4,6 @@ layout: film
 added: 2019-09-03
 released: 2000-08-30
 slug: o-brother-where-art-thou-2000
-permalink: films/o-brother-where-art-thou-2000
 title: >
   O Brother, Where Art Thou?
 description: >

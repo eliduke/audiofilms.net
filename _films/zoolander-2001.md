@@ -4,7 +4,6 @@ layout: film
 added: 2024-01-21
 released: 2001-09-28
 slug: zoolander-2001
-permalink: films/zoolander-2001
 title: >
   Zoolander
 description: >

@@ -4,7 +4,6 @@ layout: film
 added: 2024-01-28
 released: 2004-06-11
 slug: napoleon-dynamite-2004
-permalink: films/napoleon-dynamite-2004
 title: >
   Napoleon Dynamite
 description: >

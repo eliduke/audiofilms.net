@@ -4,7 +4,6 @@ layout: film
 added: 2018-08-05
 released: 2004-04-30
 slug: mean-girls-2004
-permalink: films/mean-girls-2004
 title: >
   Mean Girls
 description: >

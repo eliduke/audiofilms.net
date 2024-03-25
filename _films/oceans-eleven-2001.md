@@ -4,7 +4,6 @@ layout: film
 added: 2024-01-21
 released: 2001-12-07
 slug: oceans-eleven-2001
-permalink: films/oceans-eleven-2001
 title: >
   Ocean's Eleven
 description: >

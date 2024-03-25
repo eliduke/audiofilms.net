@@ -60,7 +60,6 @@ input_ids.each do |id|
     added: #{film_yaml['added']}
     released: #{movie['release_date']}
     slug: #{slug}
-    permalink: films/#{slug}
     title: >
       #{title}
     description: >

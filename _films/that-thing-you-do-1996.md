@@ -4,7 +4,6 @@ layout: film
 added: 2020-04-30
 released: 1996-10-04
 slug: that-thing-you-do-1996
-permalink: films/that-thing-you-do-1996
 title: >
   That Thing You Do!
 description: >

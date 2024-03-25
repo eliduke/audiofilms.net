@@ -4,7 +4,6 @@ layout: film
 added: 2024-01-28
 released: 1994-06-24
 slug: lion-king-1994
-permalink: films/lion-king-1994
 title: >
   The Lion King
 description: >

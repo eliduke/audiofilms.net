@@ -4,7 +4,6 @@ layout: film
 added: 2024-01-27
 released: 1994-12-16
 slug: dumb-and-dumber-1994
-permalink: films/dumb-and-dumber-1994
 title: >
   Dumb and Dumber
 description: >

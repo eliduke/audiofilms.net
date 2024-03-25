@@ -4,7 +4,6 @@ layout: film
 added: 2024-01-28
 released: 2001-04-10
 slug: joe-dirt-2001
-permalink: films/joe-dirt-2001
 title: >
   Joe Dirt
 description: >

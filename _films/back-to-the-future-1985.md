@@ -4,7 +4,6 @@ layout: film
 added: 2014-11-25
 released: 1985-07-03
 slug: back-to-the-future-1985
-permalink: films/back-to-the-future-1985
 title: >
   Back to the Future
 description: >

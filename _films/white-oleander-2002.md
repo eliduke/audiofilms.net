@@ -4,7 +4,6 @@ layout: film
 added: 2019-01-31
 released: 2002-10-11
 slug: white-oleander-2002
-permalink: films/white-oleander-2002
 title: >
   White Oleander
 description: >

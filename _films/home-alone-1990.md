@@ -4,7 +4,6 @@ layout: film
 added: 2024-01-28
 released: 1990-11-16
 slug: home-alone-1990
-permalink: films/home-alone-1990
 title: >
   Home Alone
 description: >

@@ -4,7 +4,6 @@ layout: film
 added: 2017-02-28
 released: 1995-07-19
 slug: clueless-1995
-permalink: films/clueless-1995
 title: >
   Clueless
 description: >
