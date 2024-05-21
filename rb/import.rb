@@ -1,3 +1,4 @@
+require 'date'
 require 'themoviedb'
 require 'open-uri'
 require 'dotenv/load'
@@ -57,7 +58,7 @@ input_ids.each do |id|
     ---
     tmdb-id: #{movie['id']}
     layout: film
-    added: #{film_yaml['added']}
+    added: #{Date.today.strftime("%F")}
     released: #{movie['release_date']}
     slug: #{slug}
     title: >

@@ -19,14 +19,14 @@ Dir['_films/*'].each do |film_file_path|
   title = movie['original_title']
   slug  = sluggit(title, movie['release_date'])
 
-  puts "* #{movie['original_title']}"
+  puts "* #{title}"
   File.open("_films/#{slug}.md", "w") do |f|
     f.write(
     <<~EOS
     ---
     tmdb-id: #{movie['id']}
     layout: film
-    added: #{film_yaml['added']}
+    added: #{movie['added']}
     released: #{movie['release_date']}
     slug: #{slug}
     title: >
