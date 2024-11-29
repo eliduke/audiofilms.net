@@ -12,8 +12,8 @@ require_relative 'sluggit'
 # DO NOT commit your API key to the repo). When you are ready,
 # go to the root directory of this repo and run these command:
 #
-# $ ruby import.rb 12345
-# $ ruby import.rb 12345 34567
+# $ ruby rb/import.rb 12345
+# $ ruby rb/import.rb 12345 34567
 #
 # You can run the script with one or many ids, and those are
 # found on a single movie page at themoviedb.org. The domain
